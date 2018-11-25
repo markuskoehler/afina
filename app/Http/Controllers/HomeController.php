@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hibiscus\Konto;
+use App\Models\Hibiscus\Umsatz;
 use Illuminate\Http\Request;
+use Redis;
 
 class HomeController extends Controller
 {
@@ -23,6 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //$test = Umsatz::whereBetween('datum', ['2017-01-01', '2017-02-01'])->get();
+        //$test2 = $test[12]->konto();
+        //dd($test2->first()->kontonummer);
+        //$test = Konto::get();
+        //dd($test[1]->umsaetze()->first());
+        $test = '';
+        return view('home', compact('test'));
     }
 }
