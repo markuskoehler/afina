@@ -9,4 +9,8 @@ class Umsatz extends BaseModel
     protected $connection = 'hibiscus';
 
     protected $table = 'umsatz';
+
+    public function konto() {
+        return $this->belongsTo(Konto::class);
+    }
 }
