@@ -9,4 +9,8 @@ class Konto extends BaseModel
     protected $connection = 'hibiscus';
 
     protected $table = 'konto';
+
+    public function umsaetze() {
+        return $this->hasMany(Umsatz::class);
+    }
 }
