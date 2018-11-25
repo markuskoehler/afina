@@ -72,6 +72,22 @@ return [
             'engine' => null,
         ],
 
+        'hibiscus' => [
+            'driver' => 'mysql',
+            'host' => env('HIBISCUS_DB_HOST', '127.0.0.1'),
+            'port' => env('HIBISCUS_DB_PORT', '3306'),
+            'database' => env('HIBISCUS_DB_DATABASE', 'forge'),
+            'username' => env('HIBISCUS_DB_USERNAME', 'forge'),
+            'password' => env('HIBISCUS_DB_PASSWORD', ''),
+            'unix_socket' => env('HIBISCUS_DB_SOCKET', ''),
+            'charset' => 'utf8',
+            'collation' => 'utf8_general_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
