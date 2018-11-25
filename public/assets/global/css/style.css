@@ -63,7 +63,7 @@ html {
   height: 100%;
 }
 body {
-  height: 100%;
+  height: calc(100% - 50px); /* with 100% we always had a scrollbar because of the additional top header bar */
   background: #F5F5F5;
   color: #5B5B5B;
   font-family: 'Lato', 'Open Sans', Helvetica, sans-serif !important;
@@ -13212,11 +13212,11 @@ html .form-group .select2-container--default.select2-container--open.select2-con
 html .form-group .select2-container--default.select2-container--focus .select2-selection--multiple {border:none !important}
 .select2-container{z-index: 900000;}
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
